@@ -1,0 +1,9 @@
+// avoid writing $in.default("#box"),  the term "default" will be removed. 
+// but interesting is that it can only work in .babelrc
+// it doesn't work once it is in webpack plugins.
+
+{
+    "plugins": [
+        "add-module-exports"
+    ] 
+}

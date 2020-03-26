@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id='box'>
+        <div class='child1'>child1</div>
+        <div class='child1'>child1</div>
+        <div class='child1'>child1</div>
+        <div class='child2'>child2</div>
+        <div class='child2'>child2</div>
+        <div class='child2'>child2</div>
+    </div>
+    <script src="../dist/fitflex.mini.js"></script>
+    <script>
+        fit('#box').flex({
+            location: 'horizontal',
+            center: `forward`,
+            children: [
+                [{ d: '.child1', w: 0.2, h: 0.2 }], 
+                [{ d: '.child2', w: 0.5, h: 0.1 }]
+            ]
+        });
+
+
+    </script>
+</body>
+
+</html>
