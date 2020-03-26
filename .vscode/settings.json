@@ -1,0 +1,4 @@
+{
+    "search.followSymlinks": true,
+    "typescript.tsserver.log": "verbose"
+}
