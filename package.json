@@ -1,14 +1,27 @@
 {
   "name": "fitflex",
   "version": "1.0.0",
-  "description": "Web layout tool",
+  "description": "CSS layout tool",
   "main": "dist/fitflex.mini.js",
+  "author": "SunQuan",
+  "license": "ISC",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.config.js"
   },
-  "author": "SunQuan",
-  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sunq0001/fitflex/issues"
+  },
+  "homepage": "https://github.com/sunq0001/fitflex",
+  "keywords": [
+    "CSS",
+    "flex",
+    "layout"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunq0001/fitflex.git"
+  },
   "devDependencies": {
     "@babel/core": "^7.8.7",
     "@babel/plugin-transform-runtime": "^7.8.3",
