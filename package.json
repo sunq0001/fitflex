@@ -2,7 +2,8 @@
   "name": "fitflex",
   "version": "1.0.2",
   "description": "CSS layout tool",
-  "main": "dist/fitflex.js",
+  "main": "dist/fitflex",
+  "typings": "dist/index",
   "author": "SunQuan",
   "license": "ISC",
   "scripts": {
