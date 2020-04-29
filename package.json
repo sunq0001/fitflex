@@ -1,6 +1,6 @@
 {
   "name": "fitflex",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "CSS layout tool",
   "main": "dist/fitflex",
   "typings": "dist/index",
