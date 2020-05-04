@@ -14,10 +14,10 @@ npm install fitflex
 ## Usage in browser
 ### Script Tag
 
-Find `fitflex.mini.js` in folder of `dist`
+Find `fitflex.js` in folder of `dist`
 
 ```js
-  <script src="fitflex.mini.js"></script>
+  <script src="fitflex.js"></script>
 ```
 Then let's configure options to adjust elements.
 
@@ -28,7 +28,7 @@ Then let's configure options to adjust elements.
         <div class='child'>child2</div>
         <div class='child'>child3</div>
     </div>
-    <script src="fitflex.mini.js"></script>
+    <script src="fitflex.js"></script>
     <script>
         var option = {
           location:'vertical',
@@ -85,7 +85,16 @@ fit(container).flex(option)
 ### Introduction to options
 
 **children**
-The selected childNodes involved into layout placement. By default, all childNodes will be involved.  The value could be element ID or className, such as `.child`, `#child `, or array of them, `[.child1, .child2, .child3] `. If you want to specify childNodes width and height, then `[{d:.child1, w:0.1, height: 0.2}, {d:.child2, w:0.2, height: 0.1}]`. You even can use 2D array so that you can group childNodes into different rows, such as `[[{d:.child1, w:0.1, height: 0.2}], [{d:.child2, w:0.2, height: 0.1}]]`. pls note that `w` and `h` value is not `px`, it is the ratio of childNodes dimension to parentNode dimension. 
+
+The selected childNodes involved into layout placement. By default, all childNodes will be involved.  The value could be element ID or className, such as 
+`.child`, `#child `, 
+or array of them, 
+`["child1"., ".child2", ".child3"] `
+If you want to specify childNodes width and height, then 
+`[{d:.child1, w:0.1, height: 0.2}, {d:".child2", w:0.2, height: 0.1}]` 
+You even can use 2D array so that you can group childNodes into different rows, such as 
+`[[{d:".child1," w:0.1, h: 0.2}], [{d:".child2", w:0.2, h: 0.1}]]`. 
+pls note that `w` and `h` value is not `px`, it is the ratio of childNodes dimension to parentNode dimension. 
 
 **location**
 
@@ -99,13 +108,21 @@ The selected childNodes involved into layout placement. By default, all childNod
 
 **adjust**
 
-This option is used to adjust the fitting of childNodes bundaries and parentNodes bundaries so that you can make childNodes and parentNodes dimension fit each other automatically. Value setting is based on 3 strings combination, such as: `onelineOuterfitForward` or `multilineInnerfitCross`, case insensitive.  
+This option is used to adjust the fitting of childNodes bundaries and parentNodes bundaries so that you can make childNodes and parentNodes dimension fit each other automatically. Value setting is based on 3 strings combination, such as: 
+`onelineOuterfitForward` or `multilineInnerfitCross`, case insensitive.  
+
 `oneline`: force selected childNodes into one line. 
+
 `multiline`: childNodes placement is based on previous options setting.
-`outerfit`:adjust parentNodes bundaries to fit childNodes dimension.  
+
+`outerfit`:adjust parentNodes bundaries to fit childNodes dimension. 
+
 `innerfit`:adjust childNodes bundaries to fit parentNodes dimension. 
+
 `forward`: fit in X-Axis. 
+
 `cross`: fit in Y-Axis.
+
 `bothway`：fit in both X and Y Axis.
 
 **gapRatio**
