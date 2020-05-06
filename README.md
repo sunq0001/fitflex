@@ -3,6 +3,10 @@ Have you still been scratching your head about how to realize vertical-center al
 Don't worry, buddies. Fitflex provides you a comfortable method to realize responsive layout only by a few Javascript codes and configuration. One more thing, it can be adapted to all kinds of screen size of mobiles, pads, desktops… 
 Are you thrilled about it? Let’s just play with it right now!
 
+# Play with Example 
+
+[Click here to play with it](https://sunq0001.github.io/fitflex_visable/dist/)
+
 
 
 ## Download
